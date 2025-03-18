@@ -1,0 +1,19 @@
+
+    .App-Products-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+        gap: 15px; /* Adds spacing between boxes */
+        justify-content: center;
+    }
+
+
+.App-Products-Box {
+    width: 400px;  /* ⬅️ Increase the width of each box */
+    padding: 5px;
+    padding-left: 10px;
+    margin-left: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center; /* Center content */
+    background-color:cornsilk; /* Optional: Light background */
+}
