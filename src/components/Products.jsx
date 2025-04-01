@@ -14,7 +14,7 @@
                    <div className="App-Products-Box" key={index}>
                    <h3>{(value.name)}</h3> 
                    <h4>{(value.price)}</h4>
-                   <button>Add to cart</button>
+                   <button>Add to cart11</button>
                    </div>
                     )) 
                 }
