@@ -3,7 +3,12 @@
  import { useContext } from "react";
  export default function Products(){
     
-        const {user,products} = useContext(appContext)
+        const {user,products,cart,setCart} = useContext(appContext)
+
+        const addToCart = (value)=>{
+            setCart({...cart,[value]:1});
+            console.log(cart)
+        }
     return(
         <div>
             <h2>Products List</h2>
@@ -14,7 +19,7 @@
                    <div className="App-Products-Box" key={index}>
                    <h3>{(value.name)}</h3> 
                    <h4>{(value.price)}</h4>
-                   <button>Add to cart11</button>
+                   <button onClick={()=>addToCart(value.id)}>Add to cart1</button>
                    </div>
                     )) 
                 }
